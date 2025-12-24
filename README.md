@@ -55,3 +55,11 @@ while height > 0 {
         let velocity = 0 - velocity;
     }
 }
+```
+</details>
+# Distribution et Sécurité
+### Lumara est distribué exclusivement sous forme de binaires compilés
+```markdown
+./lumara [path_to_file.luma]
+```
+[!TIP] Pour des résultats constants sous la barre des 2 µs, il est recommandé de dévouer un thread CPU isolé au processus Lumara.
