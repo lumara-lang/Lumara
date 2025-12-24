@@ -57,6 +57,43 @@ while height > 0 {
 }
 ```
 </details>
+### Exemple de rapidité
+<details>
+<summary><b>Voir la syntaxe de référence</b></summary>
+
+```Lumara
+// Lumara Prometheus v1.3.0 - Rapidity Benchmark
+// --------------------------------------------------
+
+PRINT(">>> INITIALIZING SENTINEL SPEED TEST...");
+
+// Capture start time (System Hardware Bridge)
+VAR start = SYSTEM::TIME();
+VAR iterations = 1000000;
+VAR counter = 0;
+
+PRINT(">>> EXECUTING 1,000,000 CALCULATIONS...");
+
+WHILE (counter < iterations) {
+    // Perform a math operation to stress the lexer
+    VAR math = (counter * 2) / 1.5;
+    counter = counter + 1;
+}
+
+// Capture end time
+VAR end = SYSTEM::TIME();
+VAR total_ms = end - start;
+
+PRINT("-----------------------------------------");
+PRINT("SENTINEL RAPIDITY RESULTS:");
+PRINT("Total Time: " + total_ms + "ms");
+PRINT("Ops Per Second: " + (iterations / (total_ms / 1000)));
+PRINT("-----------------------------------------");
+
+// Voice Alert for the user
+VOICE::SPEAK("Speed test complete. Lumara performance is optimal.");
+```
+</details>
 
 # 5. Distribution et Sécurité
 ## Installation et Exécution
