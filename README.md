@@ -64,36 +64,36 @@ while height > 0 {
 <summary><b>Voir la syntaxe de référence</b></summary>
 
 ```Lumara
-// Lumara Prometheus v1.3.0 - Rapidity Benchmark
+// lumara prometheus v1.3.0 - test de rapidite
 // --------------------------------------------------
 
-PRINT(">>> INITIALIZING SENTINEL SPEED TEST...");
+print(">>> initialisation du test sentinel...");
 
-// Capture start time (System Hardware Bridge)
-VAR start = SYSTEM::TIME();
-VAR iterations = 1000000;
-VAR counter = 0;
+// capture du temps via le hardware bridge
+var start = system::time();
+var iterations = 1000000;
+var counter = 0;
 
-PRINT(">>> EXECUTING 1,000,000 CALCULATIONS...");
+print(">>> execution de 1,000,000 operations...");
 
-WHILE (counter < iterations) {
-    // Perform a math operation to stress the lexer
-    VAR math = (counter * 2) / 1.5;
+while (counter < iterations) {
+    // calcul simple pour stresser le lexer
+    var math = (counter * 2) / 1.5;
     counter = counter + 1;
 }
 
-// Capture end time
-VAR end = SYSTEM::TIME();
-VAR total_ms = end - start;
+// capture du temps final
+var end = system::time();
+var total_ms = end - start;
 
-PRINT("-----------------------------------------");
-PRINT("SENTINEL RAPIDITY RESULTS:");
-PRINT("Total Time: " + total_ms + "ms");
-PRINT("Ops Per Second: " + (iterations / (total_ms / 1000)));
-PRINT("-----------------------------------------");
+print("-----------------------------------------");
+print("resultats sentinel :");
+print("temps total : " + total_ms + "ms");
+print("ops/seconde : " + (iterations / (total_ms / 1000)));
+print("-----------------------------------------");
 
-// Voice Alert for the user
-VOICE::SPEAK("Speed test complete. Lumara performance is optimal.");
+// alerte vocale finale
+voice::speak("test de rapidite termine.");
 ```
 </details>
 
