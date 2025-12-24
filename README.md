@@ -58,7 +58,7 @@ while height > 0 {
 ```
 </details>
 # Distribution et Sécurité
-### Lumara est distribué exclusivement sous forme de binaires compilés
+Lumara est distribué exclusivement sous forme de binaires compilés
 ```markdown
 ./lumara [path_to_file.luma]
 ```
