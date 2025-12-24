@@ -57,7 +57,9 @@ while height > 0 {
 }
 ```
 </details>
-### Exemple de rapidité
+
+## Exemple de rapidité
+
 <details>
 <summary><b>Voir la syntaxe de référence</b></summary>
 
