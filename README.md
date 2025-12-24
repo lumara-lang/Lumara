@@ -57,9 +57,13 @@ while height > 0 {
 }
 ```
 </details>
-# Distribution et Sécurité
-Lumara est distribué exclusivement sous forme de binaires compilés
-```markdown
-./lumara [path_to_file.luma]
+
+# 5. Distribution et Sécurité
+## Installation et Exécution
+Lumara est distribué exclusivement sous forme de binaires compilés.
+```
+./lunara.exe [path_to_lunara_file.luma]
 ```
 [!TIP] Pour des résultats constants sous la barre des 2 µs, il est recommandé de dévouer un thread CPU isolé au processus Lumara.
+### 5.1 Mise au path systeme
+En utilisant l'installeur vous pouvez automatiser l'installation.
